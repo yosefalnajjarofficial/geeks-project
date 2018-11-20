@@ -1,0 +1,363 @@
+
+/* 
+This design and these Css styles were inspired by a video on Youtube by traversy midea called the Parallax effect
+I know that it's not perfect and myabe it's not readable but that's what I could do with the things I have learned
+from freecodecamp
+ */
+
+body, html{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+
+.top{
+	background-image: url('../img/image2.jpg');
+	min-height: 100%;
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* Making the parallax effect */
+	background-attachment: fixed;  
+}
+
+.bottom{
+	background-image: url('../img/image2.jpg');
+	min-height: 100%;
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* Making the parallax effect */
+	background-attachment: fixed;  
+}
+
+
+
+.text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+	position: absolute;
+	top: 35%;
+	width:100%;
+	text-align: center;
+	color: #FFF;
+	font-size: 40px;
+}
+
+.border{
+	display: flex;
+	flex-direction: row;
+	margin-left: 36%;
+}
+
+.name{
+	color: #FFDC00;
+}
+
+h6{
+	margin-top: 0px;
+}
+
+.section_one{
+	width: 90%;
+	height: 90%;
+	display: flex;
+	padding: 10px;
+	margin-top: 50px;
+}
+
+.myPic{
+	/*width: 30%;*/
+	height: 80%;
+	background-repeat: no-repeat;
+	margin: 20px;
+}
+
+.aboutP{
+	text-align: left;
+	font-size: 17px;
+	/*width: 80%;*/
+	/*margin: 10px 20px 10px 20px; */
+}
+
+.div_one{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin-left: 20px;
+}
+
+
+
+.section_two{
+	width: 100%;
+	height: auto;
+}
+
+.headings{
+	text-align: center;
+}
+
+.skillimg{
+	width: 50px;
+	height: 50px;
+	align-items: center;
+}
+
+.my_skills{
+	display: flex;
+	justify-content: center;
+}
+
+.skill{
+	display: flex;
+	flex-direction: column;
+	margin: 50px;
+}
+
+.skill span{
+	margin: 5px;
+}
+
+.section_three{
+	width: 100%;
+	height: 150%;
+}
+
+.hobbies{
+	display: flex;
+	flex-direction: column;
+}
+
+.first_row{
+	display: flex;
+	padding: 2px;
+	justify-content: center;
+
+}
+
+.second_row{
+	display: flex;
+	padding: 2px;
+	justify-content: center;
+}
+
+.pics{
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 400px;
+}
+
+.pics:hover{
+	background-color: #000;
+	opacity: 0.50;
+
+}
+
+.section_four{
+	width: 100%;
+	height: 70%
+}
+
+
+.p1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 90%;
+	text-align: left;
+	margin-left: 60px;
+}
+
+.section_five{
+	width: 100%;
+	height: 50%;
+}
+
+.accounts{
+	display: flex;
+	justify-content: center;
+	margin: 10px 20px 10px 20px;
+}
+
+.account{
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+
+}
+
+
+@media only screen and (max-width: 568px){
+	nav{
+		display: none;
+	}
+
+	.top{
+	width: 100%;
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;  
+	}
+
+	.text{
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+
+	.border{
+	margin-left: -10px;
+	display: flex;
+	flex-direction: column;
+}
+
+	.lastName{
+		margin-top: 0;
+	}
+
+	.section_one{
+	display: flex;
+	flex-direction: column;
+	margin:10px 5px 10px 5px; 
+	width: 90%;
+	height: auto;
+}
+
+.myPic{
+	height: 50%;
+	width: 100%;
+	background-repeat: no-repeat;
+	margin: 15px 0px 0px 0px;
+}
+
+.div_one{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	height: auto;
+}
+
+.aboutP{
+	margin-top: 0px;
+	width: 100%;
+	font-size: 17px
+}
+
+.section_two{
+	margin: 50px 0px 50px 0px;
+	height: auto;
+	width: 90%;
+}
+
+
+.my_skills{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 5px 5px 5px 5px;
+	width: 100%;
+}
+
+.skill{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section_three{
+	margin: 20px 0px 20px 0px;
+	width: 100%;
+	height: auto;
+}
+
+.hobbies{
+	margin-left: 3px;
+	width: 98%;
+	align-items: center;
+}
+
+.first_row{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	height: auto;
+}
+
+.second_row{
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+}
+
+.pics{
+	width: 100%;
+}
+
+
+.section_four{
+	margin: 50px 10px 50px 10px;
+	width: 90%;
+	height: auto;
+}
+
+
+.p1{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-left: 0px;
+}
+
+.section_five{
+	width: 90%;
+	margin: 30px 10px 30px 10px;
+	height: auto;
+}
+
+.accounts{
+	margin-left: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.bottom{
+	width: 100%;
+	background-image: url('../img/image2.jpg');
+	position: relative;
+	opacity: 0.70;
+	background-repeat: no-repeat;
+	height: 30px;
+	background-attachment: scroll;  
+	}
+
+.headings{
+	width: 100%;
+}
+
+
+
+
+
+}
